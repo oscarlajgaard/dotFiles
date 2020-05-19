@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/oscarlajgaard/Projects/src'
+let g:netrw_dirhist_3='/Users/oscarlajgaard/Documents/GitHub/prp_policecentral/html'
+let g:netrw_dirhist_2='/Users/oscarlajgaard/Documents/MDT'
+let g:netrw_dirhist_1='/Users/oscarlajgaard/Documents'
+let g:netrw_dirhist_0='/Users/oscarlajgaard/Documents/MDT'
+let g:netrw_dirhist_9='/Users/oscarlajgaard/Documents'
+let g:netrw_dirhist_8='/Users/oscarlajgaard'
+let g:netrw_dirhist_7='/Users/oscarlajgaard/github'
+let g:netrw_dirhist_6='/Users/oscarlajgaard'
+let g:netrw_dirhist_5='/Users/oscarlajgaard/LajgaardJensen'
