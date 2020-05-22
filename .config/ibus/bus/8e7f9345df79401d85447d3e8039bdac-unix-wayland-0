@@ -1,0 +1,7 @@
+# This file is created by ibus-daemon, please do not modify it.
+# This file allows processes on the machine to find the
+# ibus session bus with the below address.
+# If the IBUS_ADDRESS environment variable is set, it will
+# be used rather than this file.
+IBUS_ADDRESS=unix:abstract=/home/darkmatter/.cache/ibus/dbus-bES1kk2T,guid=c438b7aaef3ee4a93ec23a055ec7eacf
+IBUS_DAEMON_PID=1904

@@ -1,14 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 
 #########
-export PATH=/Users/oscarlajgaard/flutter/bin:$PATH
-export PATH="/usr/local/bin:$PATH"
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-export XDG_CONFIG_HOME="$HOME/.config"
-# Exports ^^
 
 #######
-sh /etc/motd.sh
 #My custom Motd^^
 
 ##############
@@ -17,10 +11,12 @@ alias mv="mv -i"
 alias rm="rm -i"
 alias ..="cd .."
 alias zz="ls -A"
+alias ghd="~/.ghidra/ghidra_9.1.2_PUBLIC/ghidraRun"
+alias ida="/home/darkmatter/idafree-7.0/ida64"
 #alias go here ^^
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/oscarlajgaard/.oh-my-zsh"
+export ZSH="/home/darkmatter/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
