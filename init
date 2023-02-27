@@ -1,0 +1,86 @@
+" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.local/share/nvim/site/plugged')
+
+" Declare the list of plugins.
+Plug 'vim-airline/vim-airline'
+" vim-plug
+Plug 'lervag/vimtex'
+Plug 'dense-analysis/ale'
+
+" Visual Settings
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+
+" Color theme plugins
+Plug 'joshdick/onedark.vim'
+
+"COC
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Fugitive Git 
+Plug 'tpope/vim-fugitive'
+
+" FuzzyFinder
+Plug 'junegunn/fzf'
+
+
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Color Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""
+syntax on
+
+colorscheme onedark
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Visual Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" For Goyo
+let g:goyo_width=85
+
+" For LimeLight
+" Color name (:help cterm-colors) or ANSI code
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
+" Color name (:help gui-colors) or RGB color
+let g:limelight_conceal_guifg = 'DarkGray'
+let g:limelight_conceal_guifg = '#777777'
+" highlight line
+let g:limelight_bop = '^.*$'
+" let g:limelight_eop = '\n'
+let g:limelight_paragraph_span = 0
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+
+nnoremap <C-p> :FZF<CR>
+nnoremap <Leader>pf :FZF<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" UI Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Turn limelight on by default
+" autocmd VimEnter * Limelight
+" Turn Goyo on by default
+" autocmd VimEnter * AirlineToggle
+" In Goyo, if airline is turned on, do nto show scratch area
+" autocmd! User GoyoEnter nested set eventignore=FocusGained
+" autocmd! User GoyoLeave nested set eventignore=
+set nu
+set relativenumber
+set tabstop=4
+set shiftwidth=4
+set autoindent
+
+""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim Tex
+""""""""""""""""""""""""""""""""""""""""""""""""
+let g:vimtex_view_method = 'zathura'
+let g:vimtex_compiler_method = 'latexmk'
